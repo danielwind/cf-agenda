@@ -18,3 +18,9 @@ npm i --save react-native-vector-icons
 
 3. Installed React Native Calendars
 npm install --save react-native-calendars
+
+4. Installed React Native Navigation
+npm install --save @react-navigation/native @react-navigation/stack
+npm install --save @react-native-community/masked-view
+npm install --save react-native-gesture-handler
+npm install --save react-native-screens

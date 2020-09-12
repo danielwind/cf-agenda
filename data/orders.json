@@ -1,0 +1,105 @@
+[
+    {
+        "_id": "724104c0-cf8b-10e9-b262-25d5f2e15309",
+        "status": "PENDING",
+        "headline": "Pedido - María Paula Raus",
+        "items": [
+            {
+                "productId": "1", 
+                "quantity": 6, 
+                "flavor": "Chocolate", 
+                "design": "Batman", 
+                "notes":"Fondant Design - Black", 
+                "references": ["https://www.pinterest.com/pin/492649944767112/"]
+            }
+        ],
+        "customer": { 
+            "fullname": "María Paula Raus", 
+            "phone": "70723456", 
+            "domicile": "Heredia", 
+            "socialNetwork": ""
+        },
+        "shipping": {
+            "type":"PICKUP",
+            "date": "09-12-2020", 
+            "time": "3pm - 5pm", 
+            "address": "", 
+            "notes": ""
+        },
+        "payment":{   
+            "deposits": [ 
+                {"_id":"1","imageUrl":"", "status":"PAID", "date": "09-06-2020"}, 
+                {"_id":"2","imageUrl":"", "status":"PENDING", "date": ""} 
+            ],
+            "invoice": {
+                "discounts" : 1000,
+                "subtotal"  : 5000,
+                "vat"       : 0,
+                "delivery"  : 2500,
+                "total"     : 6500
+            },
+            "chargeTaxes": false
+        },
+        "showcase": [ 
+            {"imageUrl": "", "date": ""} 
+        ],
+        "reminders": "Comprar Chocolate!",
+        "createdAt": "01-12-2020",
+        "createdBy": "924104c0-cf8b-10e9-b262-25d5f2e15310"
+    },
+    {
+        "_id": "724104c0-cf8b-10e9-b262-25d5f2e15308",
+        "status": "PENDING",
+        "headline": "Pedido - Daniel Wind",
+        "details": [
+            {
+                "productId": "3", 
+                "quantity": 1, 
+                "flavor": "Pasta Vainilla", 
+                "design": "Perro", 
+                "notes":"Crema Blanca (sabor Ron)",  
+                "references": ["https://www.pinterest.com/pin/220817187968710552/"]
+            },
+            {
+                "productId": "2", 
+                "quantity": 6, 
+                "flavor": "Chocolate", 
+                "design": "Perros", 
+                "notes":"Bolas amarillas y grises", 
+                "references": ["https://www.pinterest.com/pin/231372499595259815/"]
+            }
+        ],
+        "customer": { 
+            "fullname": "Daniel Wind", 
+            "phone": "70729401", 
+            "domicile": "Heredia", 
+            "socialNetwork": "Facebook"
+        },
+        "shipping": {
+            "type":"DELIVERY",
+            "date": "09-12-2020", 
+            "time": "5pm - 8pm", 
+            "address": "https://www.google.com/maps/@10.0278743,-84.0798311,13.93z", 
+            "notes": "Llamar a Rasi Raus en la puerta"
+        },
+        "payment":{   
+            "deposits": [ 
+                {"_id":"1","imageUrl":"", "status":"PAID", "date": "09-09-2020"} 
+            ],
+            "invoice": {
+                "discounts" : 1000,
+                "subtotal"  : 5000,
+                "vat"       : 0,
+                "delivery"  : 2500,
+                "total"     : 6500
+            },
+            "chargeTaxes": false
+        },  
+        "showcase": [ 
+            {"imageUrl": "", "date": ""} 
+        ],
+        "reminders": "Comprar Chocolate!",
+        "createdAt": "01-12-2020",
+        "createdBy": "924104c0-cf8b-10e9-b262-25d5f2e15310"
+    }
+]

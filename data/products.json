@@ -1,0 +1,34 @@
+[
+    {
+        "_id": "1",
+        "name": "Cupcakes"
+    },
+    {
+        "_id": "2",
+        "name": "CakePops"
+    },
+    {
+        "_id": "3",
+        "name": "Cake"
+    },
+    {
+        "_id": "4",
+        "name": "Mini-Dessert"
+    },
+    {
+        "_id": "5",
+        "name": "Kid Cookie Box"
+    },
+    {
+        "_id": "6",
+        "name": "Cookie Cake"
+    },
+    {
+        "_id": "7",
+        "name": "Brownies"
+    },
+    {
+        "_id": "8",
+        "name": "Donuts"
+    }
+]
