@@ -24,3 +24,6 @@ npm install --save @react-navigation/native @react-navigation/stack
 npm install --save @react-native-community/masked-view
 npm install --save react-native-gesture-handler
 npm install --save react-native-screens
+npm install --save @react-navigation/bottom-tabs
+expo install expo-localization
+npm install --save i18n-js

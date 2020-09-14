@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Agenda} from 'react-native-calendars'
-import { StyleSheet, Text, View, Linking } from 'react-native'
+import { StyleSheet, Text, View, Linking, TouchableOpacity} from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const CalendarScreen = ({ navigation }) => {
@@ -18,6 +18,7 @@ const CalendarScreen = ({ navigation }) => {
               const numItems = Math.floor(Math.random() * 5);
               for (let j = 0; j < numItems; j++) {
                 items[strTime].push({
+                  orderId: '724104c0-cf8b-10e9-b262-25d5f2e15309',
                   customer: 'Pedido - María Paula Raus',
                   time: '3pm - 5pm',
                   order: 'Caja 6 cupcakes / 24 Galletas Navideñas',
@@ -42,29 +43,31 @@ const CalendarScreen = ({ navigation }) => {
 
     const renderItem = (item) => {
     return (
-        <View style={[styles.item, {flex: 1, flexDirection: 'row'}]}>
-        
-        <View style={{maxWidth:240, flex:1, flexDirection: 'column', alignContent: 'space-between'}}>
-            <Text style={{fontSize:18, color:'#808080'}}>{item.customer}</Text>
-            <Text style={{marginTop: 5}}>{item.order}</Text>
-            <Text style={{marginTop: 5}}>Entrega: {item.time}</Text>
-            <Text style={{marginTop: 5}}>
-            Teléfono:&nbsp;
-            <Text style={{color: '#00b1b0', textDecorationLine: 'underline'}} onPress={() => Linking.openURL(`tel:${item.phone}`)}>{item.phone}</Text>
-            </Text>
-            <Text style={{marginTop: 5}}>
-            Whatsapp:&nbsp; 
-            <Text style={{color: '#00b1b0', textDecorationLine: 'underline'}} onPress={() => Linking.openURL(`https://wa.me/506${item.phone}`)}>{item.phone}</Text>
-            </Text>
-        </View>
+        <TouchableOpacity onPress={() => navigation.navigate('Order', {id: item.orderId})}>
+            <View style={[styles.item, {flex: 1, flexDirection: 'row'}]}>
+            
+                <View style={{maxWidth:240, flex:1, flexDirection: 'column', alignContent: 'space-between'}}>
+                    <Text style={{fontSize:18, color:'#808080'}}>{item.customer}</Text>
+                    <Text style={{marginTop: 5}}>{item.order}</Text>
+                    <Text style={{marginTop: 5}}>Entrega: {item.time}</Text>
+                    <Text style={{marginTop: 5}}>
+                    Teléfono:&nbsp;
+                    <Text style={{color: '#00b1b0', textDecorationLine: 'underline'}} onPress={() => Linking.openURL(`tel:${item.phone}`)}>{item.phone}</Text>
+                    </Text>
+                    <Text style={{marginTop: 5}}>
+                    Whatsapp:&nbsp; 
+                    <Text style={{color: '#00b1b0', textDecorationLine: 'underline'}} onPress={() => Linking.openURL(`https://wa.me/506${item.phone}`)}>{item.phone}</Text>
+                    </Text>
+                </View>
 
-        <View>
-            <Icon
-            name="truck-fast"
-            size={30}
-            color={'#f26532'}/>
-        </View>
-        </View>
+                <View>
+                    <Icon
+                    name="truck-fast"
+                    size={30}
+                    color={'#f26532'}/>
+                </View>
+            </View>
+        </TouchableOpacity>
     );
     }
 

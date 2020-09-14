@@ -1,6 +1,7 @@
 [
     {
         "_id": "724104c0-cf8b-10e9-b262-25d5f2e15309",
+        "orderno": "000001",
         "status": "PENDING",
         "headline": "Pedido - María Paula Raus",
         "items": [
@@ -18,6 +19,9 @@
             "phone": "70723456", 
             "domicile": "Heredia", 
             "socialNetwork": ""
+        },
+        "packaging": {
+            "type": "INDIVIDUAL"
         },
         "shipping": {
             "type":"PICKUP",
@@ -40,7 +44,7 @@
             },
             "chargeTaxes": false
         },
-        "showcase": [ 
+        "gallery": [ 
             {"imageUrl": "", "date": ""} 
         ],
         "reminders": "Comprar Chocolate!",
@@ -49,6 +53,7 @@
     },
     {
         "_id": "724104c0-cf8b-10e9-b262-25d5f2e15308",
+        "orderno": "000002",
         "status": "PENDING",
         "headline": "Pedido - Daniel Wind",
         "details": [
@@ -75,6 +80,9 @@
             "domicile": "Heredia", 
             "socialNetwork": "Facebook"
         },
+        "packaging": {
+            "type": "NORMAL"
+        },
         "shipping": {
             "type":"DELIVERY",
             "date": "09-12-2020", 
@@ -95,7 +103,7 @@
             },
             "chargeTaxes": false
         },  
-        "showcase": [ 
+        "gallery": [ 
             {"imageUrl": "", "date": ""} 
         ],
         "reminders": "Comprar Chocolate!",

@@ -2,7 +2,7 @@ import apiService from './api.service'
 import storageService from './storage.service'
 import endpoints from '../utils/endpoints.util'
 
-export const authService = {
+export default {
 
     login: async (payload) => {
 
